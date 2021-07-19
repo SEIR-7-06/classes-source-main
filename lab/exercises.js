@@ -1,8 +1,7 @@
 // For each class, consider:
-// what parameters should its contstructor take in?
+// what parameters should its constructor take in?
 // what state does it need?
 // what methods does it need?
-
 
 // create a new class called Circle
 // cheat sheet: the radius of a circle is the distance from the center to the edge. A circle's perimeter is equal to 2 * pi * radius. A circle's area is equal to pi * radius * radius
@@ -35,7 +34,6 @@
 
 
 
-
 // ==================
 // TEST SUITE BEGINS HERE
 // ==================
@@ -43,8 +41,8 @@
 // Circle tests:
 // const myCircle = new Circle(3);
 // console.log(myCircle.radius === 3);
-// console.log(myCircle.perimeter() > 18.849 && myCircle.perimeter() < 18.85);
-// console.log(myCircle.area() > 28.274 && myCircle.area() < 28.275);
+// console.log(myCircle.perimeter > 18.849 && myCircle.perimeter < 18.85);
+// console.log(myCircle.area > 28.274 && myCircle.area < 28.275);
 
 
 
@@ -53,29 +51,29 @@
 // console.log(myTriangle.side1 === 2);
 // console.log(myTriangle.side2 === 5);
 // console.log(myTriangle.side3 === 6);
-// console.log(myTriangle.perimeter() === 13);
-// console.log(myTriangle.isRightTriangle() === false);
+// console.log(myTriangle.perimeter === 13);
+// console.log(myTriangle.isRightTriangle === false);
 
 // const myRightTriangle = new Triangle(3,4,5);
 // console.log(myRightTriangle.side1 === 3);
 // console.log(myRightTriangle.side2 === 4);
 // console.log(myRightTriangle.side3 === 5);
-// console.log(myRightTriangle.perimeter() === 12);
-// console.log(myRightTriangle.isRightTriangle() === true);
+// console.log(myRightTriangle.perimeter === 12);
+// console.log(myRightTriangle.rightTriangle === true);
 
 
 // Rectangle tests:
 // const myRectangle = new Rectangle(3, 5);
 // console.log(myRectangle.width === 3);
-// console.log(myRectangle.height === 5);
-// console.log(myRectangle.perimeter() === 16);
-// console.log(myRectangle.area() === 15);
+// console.log(myRectangle.length === 5);
+// console.log(myRectangle.perimeter === 16);
+// console.log(myRectangle.area === 15);
 
 
 // Square tests
 // const mySquare = new Square(2);
-// console.log(mySquare instanceof Rectangle === true);
+// console.log(mySquare instanceof(Rectangle) === true);
 // console.log(mySquare.width === 2);
-// console.log(mySquare.height === 2);
-// console.log(mySquare.perimeter() === 8);
-// console.log(mySquare.area() === 4);
+// console.log(mySquare.length === 2);
+// console.log(mySquare.perimeter === 8);
+// console.log(mySquare.area === 4);
