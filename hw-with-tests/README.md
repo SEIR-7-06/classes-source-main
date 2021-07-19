@@ -16,10 +16,3 @@ The Emperor has commissioned you to build a Gladiator Arena!! You'll be using yo
 
 - All your tests are green!
 
-### 🚀 Your submission should include...
-
-- A pull request to this repository.
-- A link submitted to the appropriate assignment on [Google Classroom](https://classroom.google.com/u/0/w/MTI4MTM1MjgyNDYw/t/all).
-- Questions, comments, concerns... you know the drill.
-
-## This homework is due 🚨🚨 FRIDAY MORNING at 10AM!! 🚨🚨
