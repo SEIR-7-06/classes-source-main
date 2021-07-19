@@ -59,7 +59,7 @@
 // console.log(myRightTriangle.side2 === 4);
 // console.log(myRightTriangle.side3 === 5);
 // console.log(myRightTriangle.perimeter === 12);
-// console.log(myRightTriangle.rightTriangle === true);
+// console.log(myRightTriangle.isRightTriangle === true);
 
 
 // Rectangle tests:
