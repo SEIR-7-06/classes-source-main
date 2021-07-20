@@ -1,149 +1,334 @@
-// const pete = {
-//   name: 'Pete Macaluso',
-//   age: 31,
-//   species: 'Homo Sapiens',
-//   firstName() {
-//     return this.name.split(' ')[0]
-//   },
-//   haveBirthday() {
-//     this.age ++;
-//     console.log('woohoo! free cake! party time!')
-//   },
-//   greet(otherPerson) {
-//     console.log(`Hi ${other.firstName()}! My name's ${this.firstName()}`)
-//   }
-// }
+// console.log("is this working? happy Monday!")
 
-// const amber = {
-//   name: 'Amber Hogan',
-//   age: 32,
-//   species: 'Homo Sapiens',
-//   firstName() {
-//     return this.name.split(' ')[0]
-//   },
-//   haveBirthday() {
-//     this.age++;
-//     console.log('woohoo! free cake! party time!')
-//   },
-//   greet(otherPerson) {
-//     console.log(`Hi ${otherPerson.firstName()}! I'm ${this.firstName()}`)
-//   }
-// }
-
-// const shereef = {
-//   name: 'Shereef Shehab',
-//   age: 29,
-//   species: 'Homo Sapiens',
-//   firstName() {
-//     return this.name.split(' ')[0]
-//   },
-
-//   haveBirthday() {
-//     this.age++
-//     console.log('wohho! free cake! party time!')
-//   },
-
-//   greet(otherPerson) {
-//     console.log(`Hi ${otherPerson.firstName()}! I'm ${this.firstName()}`)
-//   }
-// }
-
-// console.log(amber.age)
-// amber.haveBirthday()
-// console.log(amber.age)
-
-// console.log(shereef.firstName())
-// shereef.greet(pete)
-
-// WRONG
-// class Person(name, age) {}
-
-class Person {
-  static isValid() {
-    return true
+const myFridge = {
+  color: 'white',
+  weight: 800,
+  doorIsOpen: false,
+  openDoor() {
+      this.doorIsOpen = true
+  },
+  closeDoor(){
+      this.doorIsOpen = false
   }
+}
 
-  constructor(name, age) {
-    // `this` refers to the instance of the Person that we are currently making
-    this.name = name;
-    this.age = age;
-    this.species = 'Homo Sapiens';
-  }
-
-  firstName() {
-    return this.name.split(' ')[0]
-  }
-
+const joel = {
+  name: 'Joel Hughes',
+  species: 'Homo Sapiens',
+  age: 99,
+  favoriteFood: 'pizza',
   haveBirthday() {
-    this.age ++;
-    console.log('woohoo! free cake! party time!')
+      this.age++;
+      console.log("woohoo! free cake!")
+  }, 
+  greet(otherPerson){
+      console.log(`Hi ${otherPerson}! My name is ${this.name}`)
   }
+};
 
-  greet(otherPerson) {
-    console.log(`Hi ${otherPerson.firstName()}! My name's ${this.firstName()}`)
+// class Person {
+
+// };
+
+// const me = new Person();
+// const bob = new Person();
+// console.log(me);
+// console.log(bob);
+// console.log(typeof(me));
+// console.log(typeof(bob))
+
+// class Person {
+//     greet(){
+//         console.log('hi!')
+//     }
+// };
+
+// const me = new Person();
+// me.greet();
+
+// class Person {
+//     greet(){
+//         console.log('hi!')
+//     }
+//     jump(){
+//         console.log('weee!')
+//     }
+// };
+
+// const me = new Person();
+// me.greet();
+// me.jump();
+
+
+// class Person {
+//     constructor(){
+//         this.legs = 2;
+//         this.arms = 2; 
+//         this.eyes = 'brown';
+//         this.hair = 'blonde';
+//     }
+//     greet(){
+//         console.log('hi!')
+//     }
+//     jump(){
+//         console.log('weee!')
+//     }
+// };
+
+// const somebody = new Person();
+// console.log(somebody);
+// console.log(somebody.legs);
+// somebody.eyes = 'blue';
+// console.log(somebody);
+
+
+// class Person {
+//     constructor(name, age, eyes, hair){
+//         this.legs = 2;
+//         this.arms = 2; 
+//         this.name = name;
+//         this.age = age; 
+//         this.eyes = eyes; 
+//         this.hair = hair
+//     }
+//     greet(){
+//         console.log('hi!')
+//     }
+//     jump(){
+//         console.log('weee!')
+//     }
+// };
+
+// const somebody = new Person('Susie', 55, 'brown', 'red');
+// console.log(somebody);
+
+// class Person {
+//     constructor(name, age, eyes, hair){
+//         this.legs = 2;
+//         this.arms = 2; 
+//         this.name = name;
+//         this.age = age; 
+//         this.eyes = eyes; 
+//         this.hair = hair
+//     }
+//     greet(){
+//         console.log('hi!')
+//     }
+//     jump(){
+//         console.log('weee!')
+//     }
+//     setHair(hairColor){
+//         this.hair = hairColor
+//     }
+// };
+
+// const somebody = new Person('Jerry', 76, 'green', 'silver');
+// console.log(somebody);
+// somebody.setHair('black');
+// console.log(somebody);
+
+
+// class ChildClass extends ParentClass{
+//     // additional behaviors here
+// }
+
+// class Person {
+//     constructor(name, age, eyes, hair){
+//         this.legs = 2;
+//         this.arms = 2; 
+//         this.name = name;
+//         this.age = age; 
+//         this.eyes = eyes; 
+//         this.hair = hair
+//     }
+//     greet(){
+//         console.log('hi!')
+//     }
+//     jump(){
+//         console.log('weee!')
+//     }
+//     setHair(hairColor){
+//         this.hair = hairColor
+//     }
+// };
+
+// class Hero extends Person {
+
+// };
+
+// const spiderman = new Hero('Peter Parker', 16, 'blue', 'brown');
+// console.log(spiderman);
+
+// class Person {
+//     constructor(name, age, eyes, hair){
+//         this.legs = 2;
+//         this.arms = 2; 
+//         this.name = name;
+//         this.age = age; 
+//         this.eyes = eyes; 
+//         this.hair = hair
+//     }
+//     greet(){
+//         console.log('hi!')
+//     }
+//     jump(){
+//         console.log('weee!')
+//     }
+//     setHair(hairColor){
+//         this.hair = hairColor
+//     }
+// };
+
+// class Hero extends Person {
+//     climb(){
+//         console.log('I can scale the side of a building!');
+//     }
+// };
+
+// const spiderman = new Hero('Peter Parker', 16, 'blue', 'brown');
+// console.log(spiderman);
+// spiderman.climb();
+// const regularPerson = new Person('Ordinary Guy', 50, 'brown', 'brown');
+// regularPerson.climb(); // throws an error
+
+// Child class can override a functionality from the Parent class
+// class Person {
+//     constructor(name, age, eyes, hair){
+//         this.legs = 2;
+//         this.arms = 2; 
+//         this.name = name;
+//         this.age = age; 
+//         this.eyes = eyes; 
+//         this.hair = hair
+//     }
+//     greet(){
+//         console.log('hi!')
+//     }
+//     jump(){
+//         console.log('weee!')
+//     }
+//     setHair(hairColor){
+//         this.hair = hairColor
+//     }
+// };
+
+// class Hero extends Person {
+//     climb(){
+//         console.log('I can scale the side of a building!');
+//     }
+//     greet(){
+//         console.log("hi there, i have special powers!")
+//     }
+// };
+
+// const spiderman = new Hero('Peter Parker', 16, 'blue', 'brown');
+// spiderman.greet();
+
+// class Person {
+//     constructor(name, age, eyes, hair){
+//         this.legs = 2;
+//         this.arms = 2; 
+//         this.name = name;
+//         this.age = age; 
+//         this.eyes = eyes; 
+//         this.hair = hair
+//     }
+//     static eyeColors(){
+//         return ['blue', 'green', 'brown', 'hazel']
+//     }
+//     greet(){
+//         console.log('hi!')
+//     }
+//     jump(){
+//         console.log('weee!')
+//     }
+//     setHair(hairColor){
+//         this.hair = hairColor
+//     }
+// };
+
+// class Hero extends Person {
+//     constructor(name, age, eyes, hair, costumeColor){
+//         super(name, age, eyes, hair, costumeColor);
+//         this.powers = ['flight', 'superhuman strength', 'x-ray vision']
+//     }
+
+//     climb(){
+//         console.log('I can scale the side of a building!');
+//     }
+//     greet(){
+//         console.log("hi there, i have special powers!")
+//     }
+//     doubleAction(){
+//         this.climb();
+//         super.jump();
+//     }
+// };
+
+// const spiderman = new Hero('Peter Parker', 16, 'blue', 'brown');
+// spiderman.doubleAction();
+
+// const justJoel = new Person('Joel', 99, 'brown', 'brown', 'red');
+// console.log(justJoel)
+
+// Let's create a "factory" object
+// It will be a "singleton"
+
+// class Car {
+//     constructor(serialNumber){
+//         this.serialNumber = serialNumber;
+//     }
+//     drive(){
+//         console.log('Vroom')
+//     }
+// }
+
+// const factory = {
+//     cars: [],
+//     generateCar(){
+//         const newCar = new Car(this.cars.length);
+//         this.cars.push(newCar);
+//         return newCar;
+//     },
+//     findCar(index){
+//         return this.cars[index]
+//     }
+// }
+
+// factory.generateCar();
+// factory.generateCar();
+// console.log(factory);
+// console.log(factory.findCar(1));
+
+// You can also have a factory that is an instantiation of a class (rather than a factory that is a singleton object)
+
+class Car {
+  constructor(maker, serialNumber){
+      this.maker = maker;
+      this.serialNumber = serialNumber;
+  }
+  drive(){
+      console.log('Vroom');
   }
 }
 
-const pete = new Person('Pete Macaluso', 31)
-const amber = new Person('Amber Hogan', 32)
-const shereef = new Person('Shereef Shehab', 29)
-
-console.log(pete.firstName())
-console.log(shereef.age)
-shereef.haveBirthday()
-console.log(shereef.age)
-console.log(pete.greet(amber))
-
-// console.log(Person)
-// console.log(typeof Person)
-
-console.log(Person.isValid())
-
-// Array.isArray('asdf') // false
-// Array.isArray(['asdf']) // true
-
-
-
-
-
-class Lawyer extends Person {
-  constructor(name, age, graduatedFrom) {
-    super(name)
-    // this.name = name;
-    // this.age = age;
-    // this.species = "Homo Sapiens";
-    this.graduatedFrom = graduatedFrom;
+class AutoPlant {
+  constructor(maker){
+      this.maker = maker;
+      this.cars = [];
   }
-  
-
-
-  greet(otherPerson) {
-    console.log(`Hi ${otherPerson.firstName()}! My name's ${this.firstName()}, OH BY THE WAY DID I MENTION I WENT TO ${this.graduatedFrom}`)
+  generateCar(){
+      const newCar = new Car(this.maker, this.cars.length)
+      this.cars.push(newCar);
+      return newCar;
+  }
+  findCar(index){
+      return this.cars[index];
   }
 }
 
-const todd = new Lawyer('Todd FakeLastName', 37, 'Yale Law')
-// console.log(todd.age)
-// todd.haveBirthday()
-// console.log(todd.age)
-
-// console.log(todd)
-// shereef.greet(todd)
-
-console.log(todd.constructor)
-console.log(todd.constructor.name)
-console.log(amber.constructor)
-console.log(amber.constructor.name)
-
-
-
-
-console.log(todd instanceof Lawyer)
-console.log(todd instanceof Person)
-console.log(pete instanceof Lawyer)
-console.log(pete instanceof Person)
-console.log(pete instanceof Object)
-
-
-console.log([] instanceof Object)
-
+const toyotaPlant = new AutoPlant("Toyota");
+const bmwPlant = new AutoPlant("BMW");
+toyotaPlant.generateCar();
+console.log(toyotaPlant);
+console.log(toyotaPlant.findCar)
